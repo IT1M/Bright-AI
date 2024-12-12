@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استشارات الذكاء الاصطناعي - Bright AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="consultation.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>استشارات الذكاء الاصطناعي للأعمال</h1>
+            <p>نساعد شركتك على التحول الرقمي وتحسين الإنتاجية من خلال حلول الذكاء الاصطناعي المخصصة</p>
+        </section>
+
+        <div id="chart-container"></div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>تحليل البيانات المتقدم</h3>
+                <p>استخدام خوارزميات الذكاء الاصطناعي لتحليل البيانات الضخمة واستخراج رؤى قيمة لتحسين الأداء التجاري.</p>
+            </div>
+            <div class="service-card">
+                <h3>التنبؤ بسلوك العملاء</h3>
+                <p>توظيف نماذج التعلم الآلي للتنبؤ بسلوك العملاء وتحسين تجربة المستخدم.</p>
+            </div>
+            <div class="service-card">
+                <h3>أتمتة العمليات</h3>
+                <p>تطبيق حلول الذكاء الاصطناعي لأتمتة المهام المتكررة وتحسين الكفاءة التشغيلية.</p>
+            </div>
+            <div class="service-card">
+                <h3>تقييم الجاهزية</h3>
+                <p>نقوم بتحليل شامل لعمليات شركتك لتحديد أفضل مجالات تطبيق الذكاء الاصطناعي.</p>
+            </div>
+            <div class="service-card">
+                <h3>استراتيجية التنفيذ</h3>
+                <p>نصمم خطة تنفيذ مخصصة تتناسب مع احتياجات عملك وميزانيتك.</p>
+            </div>
+            <div class="service-card">
+                <h3>التدريب والدعم</h3>
+                <p>نقدم تدريباً شاملاً لفريقك ودعماً مستمراً لضمان نجاح التنفيذ.</p>
+            </div>
+            <div class="service-card">
+                <h3>حلول مخصصة</h3>
+                <p>نطور حلول ذكاء اصطناعي مخصصة تناسب احتياجات عملك الفريدة.</p>
+            </div>
+        </div>
+
+        <button class="cta-button" onclick="showForm()">احجز استشارة مجانية</button>
+
+        <!-- نموذج الاتصال -->
+        <div class="contact-form" id="contactForm">
+            <h2>اتصل بنا للاستشارة</h2>
+            <form action="mailto:info@brightaii.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">تفاصيل الاستشارة</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+
+        <!-- قسم الفوائد -->
+        <div class="benefits-section">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="benefit-title">خبرة متخصصة</h3>
+                <p class="benefit-description">استفد من خبرة متخصصينا في مجال الذكاء الاصطناعي لتطوير حلول مبتكرة لعملك.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="benefit-title">تحسين الأداء</h3>
+                <p class="benefit-description">زيادة كفاءة عملياتك التجارية من خلال حلول الذكاء الاصطناعي المتقدمة.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="benefit-title">حلول آمنة</h3>
+                <p class="benefit-description">ضمان أمان وخصوصية بياناتك مع أحدث تقنيات الحماية والأمان.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="consultation.js"></script>
+</body>
+</html>

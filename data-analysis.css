@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+
+nav {
+    background-color: #16213e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateZ(20px);
+}
+
+.section-title {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* مخطط مراحل العمل */
+.workflow-chart {
+    width: 100%;
+    height: 250px;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.workflow-node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workflow-node:hover {
+    filter: brightness(1.2);
+}
+
+.workflow-text {
+    fill: white;
+    font-size: 14px;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.workflow-arrow {
+    fill: none;
+    stroke: #64ffda;
+    stroke-width: 2;
+    marker-end: url(#arrowhead);
+}
+
+.node-details {
+    position: absolute;
+    background: rgba(10, 25, 47, 0.95);
+    border: 2px solid #64ffda;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width:250px;
+    z-index: 1000;
+    display: none;
+    color: white;
+    pointer-events: none;
+}
+
+/* خدمات تحليل البيانات */
+.section-3d {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.section-3d:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.section-3d h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.section-3d p {
+    color: #333;
+}
+
+.section-3d .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section-3d .content .card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+    transition: transform 0.3s ease;
+}
+
+.section-3d .content .card:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.section-3d .content .chart-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+    transition: transform 0.3s ease;
+}
+
+.section-3d .content .chart-container:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .workflow-chart {
+        height: 200px;
+    }
+
+    .workflow-text {
+        font-size: 12px;
+    }
+}
